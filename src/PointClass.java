@@ -1,26 +1,35 @@
 
 import java.awt.*;
 
-public class Point {
+public class PointClass {
     private int x;
     private int y;
     private int size;
     private boolean flag;
+    private int startAngle;
+    private int arcAngle;
 
     private boolean motion;
     private Color color;
 
+    private boolean arc;
+
     private boolean increase;
 
-    public Point(int x, int y, int size, boolean flag, Color color) {
+    public PointClass(int x, int y, int size, boolean flag, Color color) {
         this.x = x;
         this.y = y;
         this.size = size;
         this.flag = flag;
         this.color = color;
     }
-    public Point(boolean flag) {
+    public PointClass(boolean flag) {
         this.flag = flag;
+    }
+    public PointClass(int x, int y, Color color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
     }
 
     public boolean isFlag() {
@@ -45,6 +54,14 @@ public class Point {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    public boolean isArc() {
+        return arc;
+    }
+
+    public void setArc(boolean arc) {
+        this.arc = arc;
     }
 
     public boolean isMotion() {
