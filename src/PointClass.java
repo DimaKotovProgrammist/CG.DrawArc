@@ -6,8 +6,6 @@ public class PointClass {
     private int y;
     private int size;
     private boolean flag;
-    private int startAngle;
-    private int arcAngle;
 
     private boolean motion;
     private Color color;
